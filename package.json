@@ -1,0 +1,66 @@
+{
+  "name": "lottie-studio",
+  "displayName": "Lottie Studio",
+  "description": "A modern VS Code extension to preview, scrub, and inspect Lottie animations (.json & .lottie) with advanced controls, export, and thumbnails.",
+  "version": "0.0.1",
+  "publisher": "lottie-viewer-dev",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayaanshaikh90/lottie-studio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayaanshaikh90/lottie-studio/issues"
+  },
+  "homepage": "https://github.com/ayaanshaikh90/lottie-studio#readme",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "betterLottieViewer.editor",
+        "displayName": "Lottie Studio",
+        "selector": [
+          {
+            "filenamePattern": "*.json"
+          },
+          {
+            "filenamePattern": "*.lottie"
+          }
+        ],
+        "priority": "option"
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^16.0.0",
+    "@types/vscode": "^1.70.0",
+    "typescript": "^4.8.4",
+    "mocha": "^10.0.0"
+  },
+  "keywords": [
+    "lottie",
+    "viewer",
+    "animation",
+    "preview",
+    "vscode",
+    "json",
+    "design"
+  ],
+  "author": "Ayaan Shaikh",
+  "license": "MIT",
+  "dependencies": {
+    "jszip": "^3.10.0"
+  }
+}

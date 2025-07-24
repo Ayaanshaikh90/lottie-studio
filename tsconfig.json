@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "Node16",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "outDir": "out" /* -> Add this line */,
+    "sourceMap": true,
+    "rootDir": "src",
+    "strict": true
+  },
+  "include": ["src/**/*"] /* -> And add this line */,
+  "exclude": ["node_modules", ".vscode-test"]
+}
