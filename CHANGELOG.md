@@ -1,9 +1,25 @@
 # Change Log
 
-All notable changes to the "lottie-viewer-plus" extension will be documented in this file.
+All notable changes to the "lottie-studio" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+---
 
-## [Unreleased]
+## ✅ `CHANGELOG.md`
 
-- Initial release
+```markdown
+# Changelog
+
+## [0.0.1] - Initial Release
+
+- 🎉 First release of **Lottie Studio**
+- View & preview `.lottie` and `.json` animations
+- Play / pause / restart controls
+- Loop toggle
+- Speed slider
+- Zoom in/out & fit
+- Background color & theme toggle
+- FPS counter
+- Scrub timeline & drag to seek
+- Export as `.json` and `.lottie` zip
+- Frame preview thumbnails on hover
+```
