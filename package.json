@@ -1,16 +1,15 @@
 {
   "name": "lottie-studio",
-  "displayName": "Lottie Studio",
+  "displayName": "Lottie Studio — Preview, Scrub & Edit .lottie & .json Animations",
   "description": "A modern VS Code extension to preview, scrub, and inspect Lottie animations (.json & .lottie) with advanced controls, export, and thumbnails.",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "publisher": "AyaanShaikh",
   "engines": {
-    "vscode": "^1.70.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Other"
   ],
-  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/ayaanshaikh90/lottie-studio.git"
@@ -59,12 +58,10 @@
     "json",
     "design"
   ],
+  "icon": "images/icon.png",
   "author": "Ayaan Shaikh",
   "license": "MIT",
   "dependencies": {
     "jszip": "^3.10.0"
-  },
-  "activationEvents": [
-    "onCustomEditor:lottieStudio.editor"
-  ]
+  }
 }
