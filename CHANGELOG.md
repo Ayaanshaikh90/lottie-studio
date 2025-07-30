@@ -3,8 +3,7 @@
 All notable changes to the "lottie-studio" extension will be documented in this file.
 
 ---
-# Changelog
-
+ 
 ## [0.0.2] - 2025-07-21
 - 📦 Added extension icon, preview GIF, and screenshots for the Marketplace
 - 🛠 Improved packaging and publishing workflow
