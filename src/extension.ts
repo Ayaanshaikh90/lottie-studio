@@ -6,7 +6,7 @@ import JSZip from "jszip";
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.window.registerCustomEditorProvider(
-      "betterLottieViewer.editor",
+      "lottieStudio.editor",
       new LottieViewerProvider(context),
       {
         // This option makes the webview persist even when it's in a background tab

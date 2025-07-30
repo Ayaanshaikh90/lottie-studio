@@ -1,34 +1,61 @@
-# 🪄 Lottie Studio
+# 🎨 Lottie Studio
 
-**View, scrub, preview & export .lottie & .json animations directly inside Visual Studio Code.**
-
-![Lottie Studio Preview](https://raw.githubusercontent.com/yourusername/lottie-studio/main/assets/preview.gif)
+**Lottie Studio** is a modern, intuitive Visual Studio Code extension for developers, designers, and motion artists to **preview, scrub, inspect, and export** Lottie animations (`.json` & `.lottie`) right inside your editor.
 
 ---
+
+![Lottie Studio preview](images/screenshot1.png)
+![Timeline thumbnails](images/screenshot2.png)
+![Live preview GIF](images/preview.gif)
+
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/AyaanShaikh.lottie-studio)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/AyaanShaikh.lottie-studio)
+![Rating](https://img.shields.io/visual-studio-marketplace/stars/AyaanShaikh.lottie-studio)
 
 ## ✨ Features
 
-- 📂 Open `.lottie` and `.json` Lottie animation files natively
-- ▶️ Play / Pause / Restart
-- 🔄 Loop toggle
-- 🎚️ Speed control
-- 🎨 Background color picker & dark/light theme toggle
-- 🪟 Zoom in/out & fit-to-width
-- 📊 FPS counter
-- 🖱️ Scrub timeline with preview
-- 🏷 Export as `.json` or `.lottie` zip
-- ⚡ Live preview thumbnails on hover
-
-All in one lightweight VSCode custom editor!
+✅ Preview `.json` and `.lottie` animations  
+✅ Play, pause, loop, restart, and change speed  
+✅ Zoom, fit-to-screen, and theme toggle (dark/light)  
+✅ Custom timeline scrub with draggable thumb  
+✅ Real-time FPS counter  
+✅ Export as `.json` or `.lottie`  
+✅ Timeline thumbnails and live drag preview  
+✅ Beautiful, clean interface designed for creative workflows
 
 ---
 
-## 📦 Installation
+## 🚀 Usage
 
-1. Install from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=lottie-viewer-dev.lottie-studio) (once published)
-2. Or build locally:
+1. Install **Lottie Studio** from the marketplace.
+2. Open any `.json` or `.lottie` file in VSCode.
+3. It will open automatically in the **Lottie Studio editor**.
+4. Use the controls on top to preview, scrub, export, and explore.
+
+---
+
+## 🛠 **Commands & Controls**
+
+- Play / Pause
+- Restart animation
+- Toggle looping
+- Change playback speed
+- Zoom in / out / fit to screen
+- Timeline scrub and preview thumbnails
+- Export `.json` or `.lottie`
+
+---
+
+## 📦 **Installation**
+
+You can:
+
+- Install directly from the VSCode marketplace.
+- Or build locally:
+
 ```bash
-git clone https://github.com/yourusername/lottie-studio.git
-cd lottie-studio
 npm install
 npm run compile
+vsce package
+code --install-extension lottie-studio-0.0.1.vsix
+```

@@ -1,8 +1,8 @@
+# Ignore source files and configs, but keep compiled JS in out/
+src/**
 .vscode/**
 .vscode-test/**
-out/**
 node_modules/**
-src/**
 .gitignore
 .yarnrc
 esbuild.js

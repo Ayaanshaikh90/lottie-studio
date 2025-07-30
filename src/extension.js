@@ -30,7 +30,7 @@ exports.activate = void 0;
 const vscode = __importStar(require("vscode"));
 const jszip_1 = __importDefault(require("jszip"));
 function activate(context) {
-    context.subscriptions.push(vscode.window.registerCustomEditorProvider("betterLottieViewer.editor", new LottieViewerProvider(context), {
+    context.subscriptions.push(vscode.window.registerCustomEditorProvider("lottieStudio.editor", new LottieViewerProvider(context), {
         // This option makes the webview persist even when it's in a background tab
         webviewOptions: { retainContextWhenHidden: true },
     }));
