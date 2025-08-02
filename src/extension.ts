@@ -46,8 +46,8 @@ class LottieViewerProvider implements vscode.CustomReadonlyEditorProvider {
         const raw = await vscode.workspace.fs.readFile(document.uri);
         animationJson = JSON.parse(Buffer.from(raw).toString("utf-8"));
       } else if (document.uri.fsPath.endsWith(".lottie")) {
-        const data = fs.readFileSync(document.uri.fsPath);
-        const zip = await JSZip.loadAsync(data);
+        const raw = await vscode.workspace.fs.readFile(document.uri);
+        const zip = await JSZip.loadAsync(raw);
 
         console.log("Files in zip:", Object.keys(zip.files));
 
@@ -256,11 +256,10 @@ class LottieViewerProvider implements vscode.CustomReadonlyEditorProvider {
 <div id="fpsCounter" style="margin-top:4px;font-size:12px;">FPS: --</div>
   </div>
 
-
-  <script nonce="${nonce}" src="${scriptUri}"></script>
-  <script nonce="${nonce}" src="${lottiePlayerUri}"></script>
+<script nonce="${nonce}" src="${lottiePlayerUri}"></script>
 <script nonce="${nonce}" src="${jszipUri}"></script>
 <script nonce="${nonce}" src="${scriptUri}"></script>
+
 
 </body>
 </html>`;

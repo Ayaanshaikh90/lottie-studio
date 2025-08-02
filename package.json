@@ -2,7 +2,7 @@
   "name": "lottie-studio",
   "displayName": "Lottie Studio — Preview, Scrub & Edit .lottie & .json Animations",
   "description": "A modern VS Code extension to preview, scrub, and inspect Lottie animations (.json & .lottie) with advanced controls, export, and thumbnails.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "AyaanShaikh",
   "engines": {
     "vscode": "^1.75.0"
