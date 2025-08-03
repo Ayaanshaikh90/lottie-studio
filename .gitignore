@@ -1,20 +1,38 @@
-# Ignore node_modules
+# Node modules
 node_modules/
 
-# Ignore VSCode build output
+# Build output (except keep final bundle)
 out/
+!out/extension.js
+
+# VSCE package files
+*.vsix
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS-specific
+# OS-specific files
 .DS_Store
 Thumbs.db
 
-# VSCode local settings (optional, but common)
+# VSCode workspace settings
 .vscode/
 
 # TypeScript build artifacts
 *.tsbuildinfo
+*.map
+
+# Tests (if you add them later)
+test/
+out/test/
+coverage/
+
+# Build configs, local scripts (optional)
+esbuild.js
+webpack.config.js
+
+# Ignore local environment or temp files
+*.local
+.env
