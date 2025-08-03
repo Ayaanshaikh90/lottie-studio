@@ -1,14 +1,26 @@
-# Ignore source files and configs, but keep compiled JS in out/
+# Ignore source, config, tests
 src/**
+test/**
 .vscode/**
 .vscode-test/**
-node_modules/**
+.vsc-extension-quickstart.md
+.vscodeignore
 .gitignore
-.yarnrc
-esbuild.js
-vsc-extension-quickstart.md
+**/*.ts
+**/*.map
 **/tsconfig.json
 **/eslint.config.mjs
-**/*.map
-**/*.ts
 **/.vscode-test.*
+webpack.config.js
+
+# Ignore node_modules (webpack bundles deps)
+node_modules/**
+
+# Ignore build artifacts
+dist/**
+out/test/**
+
+# Keep built output & static assets
+!out/extension.js
+!media/**
+!images/**

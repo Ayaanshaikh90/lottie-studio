@@ -1,6 +1,4 @@
 import * as vscode from "vscode";
-import * as fs from "fs";
-import * as path from "path";
 import JSZip from "jszip";
 
 export function activate(context: vscode.ExtensionContext) {
@@ -123,7 +121,6 @@ class LottieViewerProvider implements vscode.CustomReadonlyEditorProvider {
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src ${webview.cspSource} 'unsafe-inline'; script-src 'nonce-${nonce}';">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lottie Viewer</title>
-<script nonce="${nonce}" src="${lottiePlayerUri}"></script>
 <style>
   body {
     margin: 0;
